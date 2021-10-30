@@ -1,4 +1,5 @@
-min_slic3r_version = 2.3.0-beta2
+min_slic3r_version = 2.3.57
+0.0.5-susi2 Various modifications to adapt to susi 2.3.57
 0.0.5-susi remove resolution to use default
 0.0.5 General print quality improvements (??)
 0.0.4 superslicer: remove top_fan_speed
