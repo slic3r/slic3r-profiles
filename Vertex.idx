@@ -1,7 +1,17 @@
 min_slic3r_version = 2.3.57
-0.1.15 Various modifications to adapt to susi 2.3.57
-0.1.14 some susi adaptation
-0.1.13 fix errors & warnings
+0.1.25 Adapt max_layer_height to the 80% of the nozzle
+0.1.24 Fix renamed profiles
+0.1.23 Fixed M104 and M109 of start_gcode
+0.1.22 Changed the support_material_contact_distance with support_material_contact_distance_top and support_material_contact_distance_bottom
+0.1.21 Added the new VERTEX L and fixed some compatibilities issues
+0.1.20 Set the max height of the XL to 430mm
+0.1.19 The relation between nozzle 0.8 and profiles has been fixed, added the new firmware version to the M115
+0.1.18 Corrected bridge_flow_ratio
+0.1.17 Corrected a bug related with the Z lift
+0.1.16 Remember update the FW to the v3.10.0
+0.1.15 Fix a bug with a duplicate key on the 0.1.14 version
+0.1.14 Fixed a bug with the compatibility of some filament brands
+0.1.13 Added VERTEX PETG for 0.6 nozzle and fixed a bug with Fillamentum PLA
 0.1.12 The changelog URL has been updated
 0.1.11 Fixed the VERTEX MINI printer model
 0.1.10 Added the movement to Z 0.20 before start to print
