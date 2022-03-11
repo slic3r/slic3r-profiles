@@ -1,4 +1,5 @@
 min_slic3r_version = 2.4.58.0
+1.4.3 Added new filament profiles and SLA materials.
 1.4.3-susi : adaptation (clean state) to susi from the 1.4.2 prusa version
 1.4.2 Added SLA material profiles.
 1.4.1 Updated firmware version.
