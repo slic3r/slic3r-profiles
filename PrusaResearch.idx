@@ -1,8 +1,41 @@
-min_slic3r_version = 2.3.57
-1.3.1-susi2 Fix missing sla
-1.3.1-susi Various modifications to adapt to susi 2.3.57
+min_slic3r_version = 2.4.58.0
+1.4.3 Added new filament profiles and SLA materials.
+1.4.3-susi : adaptation (clean state) to susi from the 1.4.2 prusa version
+1.4.2 Added SLA material profiles.
+1.4.1 Updated firmware version.
+1.4.0 Updated for the PrusaSlicer 2.4.0-rc release. Updated SLA material colors.
+min_slic3r_version = 2.4.0-beta2
+1.4.0-beta3 Added material profiles for Prusament Resins.
+1.4.0-beta2 Added SLA material colors. Updated BASF filament profiles.
+min_slic3r_version = 2.4.0-beta0
+1.4.0-beta1 Updated pad wall slope angle for SLA printers. Updated Filatech Filacarbon profile for Prusa MINI. 
+1.4.0-beta0 Added multiple Filatech and BASF filament profiles. Added material profiles for SL1S.
+min_slic3r_version = 2.4.0-alpha0
+1.4.0-alpha8 Added material profiles for Prusament Resin. Detect bridging perimeters enabled by default. 
+1.4.0-alpha7 Updated brim_separation value. Updated Prusa MINI end g-code. Added Filamentworld filament profiles. 
+1.4.0-alpha6 Added nozzle priming after M600. Added nozzle diameter checks for 0.8 nozzle printer profiles. Updated FW version. Increased number of top solid infill layers (0.2 layer height).
+1.4.0-alpha5 Added multiple add:north and Extrudr filament profiles. Updated support head settings (SL1S).
+1.4.0-alpha4 Decreased Area Fill (SL1S).
+1.4.0-alpha3 Updated SL1S tilt times.
+1.4.0-alpha2 Updated Prusa MINI machine limits.
+1.4.0-alpha1 Added new SL1S resin profiles.
+1.4.0-alpha0 Bumped up config version.
+1.3.0-alpha2 Added SL1S SPEED profiles.
+1.3.0-alpha1 Added Prusament PCCF. Increased travel acceleration for Prusa MINI. Updated start g-code for Prusa MINI. Added multiple add:north and Extrudr filament profiles. Updated Z travel speed values.
+1.3.0-alpha0 Disabled thick bridges, updated support settings.
+min_slic3r_version = 2.3.2-alpha0
+1.3.6 Updated firmware version.
+1.3.5 Added material profiles for Prusament Resins.
+1.3.4 Added material profiles for new Prusament Resins. Added profiles for multiple BASF filaments.
+1.3.3 Added multiple profiles for Filatech filaments. Added material profiles for SL1S SPEED. Updated SLA print settings.
+1.3.2 Added material profiles for Prusament Resin.
+1.3.1 Added multiple add:north and Extrudr filament profiles. Updated support head settings (SL1S).
 1.3.0 Added SL1S SPEED profiles.
 min_slic3r_version = 2.3.0-rc1
+1.2.11 Updated firmware version.
+1.2.10 Added multiple profiles for Filatech filaments. Updated SLA print settings (pad wall slope angle).
+1.2.9 Added material profiles for Prusament Resin.
+1.2.8 Added multiple add:north and Extrudr filament profiles.
 1.2.7 Updated "Prusament PC Blend Carbon Fiber" profile for Prusa MINI.
 1.2.6 Added filament profile for "Prusament PC Blend Carbon Fiber".
 1.2.5 Updated firmware version. Added filament profiles. Various improvements.
@@ -12,19 +45,18 @@ min_slic3r_version = 2.3.0-rc1
 1.2.1 Updated FW version for MK2.5 family printers.
 1.2.0 Added full_fan_speed_layer value for PETG. Increased support interface spacing for 0.6mm nozzle profiles. Updated firmware version.
 min_slic3r_version = 2.3.0-beta2
-1.2.0-susi remove resolution to use default
 1.2.0-beta1 Updated end g-code. Added full_fan_speed_layer values.
 min_slic3r_version = 2.3.0-beta0
-1.2.1-beta0 remove G92 in layer change, as it's not understand by the slicer.
 1.2.0-beta0 Adjusted infill anchor limits. Added filament spool weights. 
 min_slic3r_version = 2.3.0-alpha4
 1.2.0-alpha1 Renamed MK3S and MINI printer profiles. Updated end g-code (MINI). Added new SLA materials and filament profiles.
 1.2.0-alpha0 Added filament spool weights
 min_slic3r_version = 2.2.0-alpha3
+1.1.15 Updated firmware version.
+1.1.14 Updated firmware version.
 1.1.13 Updated firmware version. Updated end g-code in MMU2 printer profiles.
 1.1.12 Added Prusament PVB filament profile. Added 0.8mm nozzle profiles. 
 1.1.11 Renamed MK3S and MINI printer profiles. Updated end g-code (MINI). Added new SLA materials and filament profiles.
-1.1.11 SuperSlicer version
 1.1.10 Updated firmware version.
 1.1.9 Updated K values in filament profiles (linear advance). Added new filament profiles and SLA materials.
 1.1.8 Updated start/end g-code scripts for MK3 family printer profiles (reduced extruder motor current for some print profiles). Added new filament and SLA material profiles.
@@ -33,10 +65,6 @@ min_slic3r_version = 2.2.0-alpha3
 1.1.5 Updated MMU1 specific retraction settings for Prusament PC Blend
 1.1.4 Added Prusament PC Blend filament profile.
 1.1.3 Added SLA material and filament profile
-1.1.6 superslicer: thumbnails & remove top_fan_speed
-1.1.5 slic3r++ adaptation: overlapping & top pattern.
-1.1.4 changed flow ratio from float to %
-1.1.3 slic3r++ version
 1.1.2 Added renamed_from fields for PETG filaments to indicate that they were renamed from PET.
 1.1.1 Added Verbatim and Fiberlogy PETG filament profiles. Updated auto cooling settings for ABS.
 1.1.1-beta Updated for PrusaSlicer 2.2.0-beta
@@ -44,11 +72,12 @@ min_slic3r_version = 2.2.0-alpha3
 1.1.1-alpha3 Print bed textures are now configurable from the Preset Bundle. Requires PrusaSlicer 2.2.0-alpha3 and newer.
 # The following line (max_slic3r_version) forces the users of PrusaSlicer 2.2.0-alpha3 and newer to update the profiles to 1.1.1-alpha3 and newer,
 # so they will see the print bed.
-max_slic3r_version = 12.2.0
-min_slic3r_version = 2.1.0
+max_slic3r_version = 2.2.0-alpha2
+min_slic3r_version = 2.2.0-alpha0
 1.1.1-alpha2 Bumped up config version, so our in house customer will get updated profiles.
 1.1.0 Filament aliases, Creality profiles and other goodies for PrusaSlicer 2.2.0-alpha0
 min_slic3r_version = 2.1.1-beta0
+1.0.12 Updated firmware version.
 1.0.11 Updated firmware version.
 1.0.10 Updated firmware version for MK2.5/S and MK3/S.
 1.0.9 Updated firmware version for MK2.5/S and MK3/S.
@@ -68,6 +97,8 @@ min_slic3r_version = 2.1.0-alpha0
 1.0.0-alpha1 Added Prusament ASA profile
 1.0.0-alpha0 Filament specific retract for PET and similar copolymers, and for FLEX
 min_slic3r_version = 1.42.0-alpha6
+0.8.11 Updated firmware version.
+0.8.10 Updated firmware version.
 0.8.9 Updated firmware version for MK2.5/S and MK3/S.
 0.8.8 Updated firmware version for MK2.5/S and MK3/S.
 0.8.7 Updated firmware version
