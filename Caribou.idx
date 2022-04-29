@@ -1,4 +1,6 @@
 min_slic3r_version = 2.3.57
+0.0.5 added default filaments
+0.0.4 added some Extrudr filaments
 0.0.3 updated Klipper start script
 0.0.2 updated urls
 0.0.1 Initial Version
