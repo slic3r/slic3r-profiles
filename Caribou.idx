@@ -1,4 +1,5 @@
 min_slic3r_version = 2.3.57
+0.0.12 updated pictures
 0.0.11 adjusted default fan speed of some filaments
 0.0.10 reduced extrusion muliplier
 0.0.9 updated options for thumbnails for MK3S and Duet
