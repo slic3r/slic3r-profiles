@@ -1,4 +1,5 @@
 min_slic3r_version = 2.4.58
+0.0.11 reduced bridge speed
 0.0.10 added MBL 308
 0.0.9 further improved briding
 min_slic3r_version = 2.3.57
