@@ -1,5 +1,13 @@
-min_slic3r_version = 2.4.1
+min_slic3r_version = 2.6.0-alpha1
+1.3.1 Add Z9Max printer and multi nozzle size presets
+1.3.0 Change printer settings for E4 hotend
+min_slic3r_version = 2.4.0-rc
+1.2.0 Add P802Q machine settings
+1.0.7 Modify retraction settings
+1.0.6 Modify tool change gcode for E4 hotend
+1.0.5 Modify retract_length for Z9_onecolor and Z8_onecolor preset
+1.0.4 Modify start gcode for Z8+E4 hotend and Z9+E4 hotend to sound a beep on ending of pre-load filaments
+1.0.3 Modify filament fan settings
 1.0.2 Modify Z8+E4 hotend and Z9+E4 hotend settings
 1.0.1 Add one color setting for Z9 and Z8 Multi-Color Hotend, Enable Z lift and wipe for Z8 & Z9 with Multi-Color hotend
-1.0.1-slic3r slic3r adaptation + Zonestar changes?
 1.0.0 Initial version
