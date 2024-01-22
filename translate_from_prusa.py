@@ -1,7 +1,7 @@
 import re
 
-filename_in = "gCreate.ini"
-filename_out = "gCreate.ini"
+filename_in = "MakerGear_init.ini"
+filename_out = "MakerGear_out.ini"
 
 in_stream = open(filename_in, mode="r", encoding="utf-8");
 lines = in_stream.read().splitlines();
@@ -104,10 +104,20 @@ for line in lines:
 		"# From prusa: first_layer_height should be \g<1> of the first_layer_height\nfirst_layer_height = 50%",
 		line
 	);
-	# note: if min_fan_speed is already set, you may have to delete manually one.
 	line = re.sub(
 		r"^cooling = 0$",
-		"# From prusa: cooling = 0, so set the min fan speed to 0. Delete if already set\nmin_fan_speed = 0",
+		"# From prusa: cooling = 0, so set the default fan speed to 0. Delete if already set\ndefault_fan_speed = 0",
+		line
+	);
+	line = re.sub(
+		r"^cooling = 1$",
+		"",
+		line
+	);
+	# note: if min_fan_speed is already set, you may have to delete manually one.
+	line = re.sub(
+		r"^min_fan_speed = ([0-9]+)$",
+		"# From prusa: min_fan_speed is now a printer setting. please copy it where the printer is. Currently letting here as default_fan_speed.\ndefault_fan_speed = \g<1>",
 		line
 	);
 	
